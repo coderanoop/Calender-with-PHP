@@ -1,0 +1,156 @@
+body
+{
+	margin: 0;
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+}
+p
+{
+	margin: 0;
+}
+li
+{
+	list-style: none;
+}
+.calenderMainWrap
+		{
+			float: left;
+			width: 252px;
+		}
+.calenderHeading
+		{
+			float: left;
+			width: 100%;
+			text-align: center;
+			background-color:#3B5ABF;
+			
+			padding: 3px 0;
+		}
+.calenderHeading time
+		{
+			font-size: 18px;
+			color: #fff;
+			margin: 0 20px;
+		}
+		.rightCalArrow
+		{
+			float: right;
+			width: 20px;
+			height: 10px;
+			text-align: center;
+			border-radius: 20%;
+			margin-right: 10px;
+			position: relative;
+		}
+		.leftCalArrow
+		{
+
+			float: left;
+			width: 20px;
+			height: 10px;
+			text-align: center;
+			border-radius: 20%;
+			margin-left: 10px;
+			position: relative;
+		}
+		.cal_navarrow:hover
+		{
+			background-color: #4E85C4 !important;
+		}
+		
+.calenderHeading .leftCalArrow, .calenderHeading .rightCalArrow
+		{
+			padding: 5px;
+			display: inline-block;
+			background-color: #3B5ABF;
+			cursor: pointer;
+			
+		}
+.calenderHeading .leftCalArrow::after, .calenderHeading .rightCalArrow::after
+		{
+			content: "";
+			position: absolute;
+			left: 10px;
+			width: 0;
+			height: 0;
+			float: left;
+			border-top: 5px solid transparent;
+			border-right: 10px solid #fff;
+			border-bottom: 5px solid transparent;
+		}
+.rightCalArrow::after
+		{
+			border-left: 10px solid #fff;
+			border-right: none !important;
+		}
+.calenderWrap
+		{
+			width: 280px;
+			border-right: none;
+			border-bottom: none;
+			float: left;
+		}
+.calHeader
+		{
+			float: left;
+			width: 100%;
+		}
+
+
+.calHeader li
+		{
+			float: left;
+			width: 35px;
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			background-color: #ccc;
+			height: 25px;
+			line-height: 25px;
+
+			font-size: 14px;
+			text-align: center;
+		}
+
+.calDates 
+		{
+			float: left;
+			width: 100%;
+		}
+.calDates li
+		{
+			position:relative;
+			float: left;
+			width: 35px;
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			font-size: 18px;
+			text-align: center;
+			height: 35px;
+			line-height: 35px;
+			color: #333;
+		}
+
+.calDates li:nth-child(1):not(.disable), .calDates li:nth-child(7n+1):not(.disable)
+{
+	background-color: #EA4D52 !important;
+	color: #fff !important;
+}
+.calDates li.disable
+{
+	background-color:#ebebeb;
+	color:#999;
+}
+.calenderSliderMain
+		{
+			float: left;
+			width: 100%;
+			overflow: hidden;
+		}
+.calenderSliderIneer
+		{
+			float: left;
+			width: 100%;
+		}
